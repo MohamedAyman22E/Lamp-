@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-bodyColor text-textColor font-fontFamilyOne select-none capitalize;
+  }
+  li {
+    @apply list-none;
+  }
+  img {
+    @apply w-[100%];
+  }
+}
+@layer components {
+  .container {
+    @apply 500:px-[15%] 400:px-[10%] 300:px-[5%] mx-auto py-[20px];
+  }
+  .nav {
+    @apply top-[-350px] duration-500;
+  }
+  .nav.active {
+    @apply top-[50px] duration-500;
+  }
+  .header.active {
+    @apply shadow-headerShadow duration-500;
+  }
+  .liChoose li.active p {
+    @apply h-[50px];
+  }
+  .liChoose li.active .plus {
+    @apply text-firstColor bg-whiteColor;
+  }
+  .liChoose li.active .plus i {
+    @apply rotate-[45deg];
+  }
+  .liChooseIcon {
+    @apply duration-[.2s] text-[30px] mt-1 bg-firstColor text-whiteColor rounded-[10px] w-[110px] 400:w-[100px] 500:w-[90px] 600:w-[80px] 700:w-[70px] 800:w-[60px] 900:w-[140px] 1000:w-[130px] 1100:w-[120px] 1200:w-[110px] 1300:w-[100px] 1400:w-[60px] h-[40px] text-center leading-[45px];
+  }
+  .navList li a.active {
+    @apply text-firstColor;
+  }
+}

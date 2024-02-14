@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Lamp</title>
+  </head>
+  <body>
+    <!-- start header -->
+    <header
+      class="header w-full fixed bg-homeBack top-0 z-[10000000000000000000000]"
+    >
+      <nav
+        class="flex items-center justify-between py-[20px] 500:px-[15%] 400:px-[10%] 300:px-[5%]"
+      >
+        <div class="logo">
+          <a href="" class="logoName"
+            >SUN<span class="text-firstColor">LIGHT</span></a
+          >
+        </div>
+        <div class="right flex items-center gap-10">
+          <div
+            class="navLink flex flex-col 750:flex-row items-center absolute nav left-0 750:static bg-bodyColor 750:bg-transparent w-full py-[50px] 750:py-[0px]"
+          >
+            <div
+              class="close 750:hidden absolute top-[10px] right-[20px] text-[20px]"
+            >
+              <i class="bx bx-x"></i>
+            </div>
+            <ul class="navList flex items-center gap-5 flex-col 750:flex-row">
+              <li class="hover:text-firstColor duration-500">
+                <a href="#home" class="">home</a>
+              </li>
+              <li class="hover:text-firstColor duration-500">
+                <a href="#popular">popular</a>
+              </li>
+              <li class="hover:text-firstColor duration-500">
+                <a href="#choose">choose</a>
+              </li>
+              <li class="hover:text-firstColor duration-500">
+                <a href="#feature">feature</a>
+              </li>
+              <li class="hover:text-firstColor duration-500">
+                <a href="#products">products</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navToggle flex items-center">
+            <div class="moon">
+              <i class="bx bx-moon"></i>
+            </div>
+            <div class="menu 750:hidden">
+              <i class="bx bx-menu-alt-right"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- end header -->
+    <!-- start home -->
+    <section
+      class="home pb-[45px] top-0 left-0 w-full before:content-[''] before:absolute before:top-0 before:left-0 800:before:clip-path-mypolygonOne before:clip-path-mypolygonTwo before:bg-homeBack before:w-full before:h-[100%] 500:before:h-[110%] 600:before:h-[120%] 800:before:h-[100%] before:-z-50"
+      id="home"
+    >
+      <div
+        class="container flex flex-col 800:flex-row items-center justify-between gap-[10%] pt-[100px]"
+      >
+        <div
+          class="home_img bg-gradient-to-r from-gradientOne to-gradientTwo rounded-tl-[50%] rounded-tr-[50%] 800:w-[50%] pb-[100px] border-[6px] border-firstColor"
+        >
+          <div class="img w-[80%] mx-auto">
+            <img src="./img/home-lamp.png" alt="" class="" />
+          </div>
+          <h3
+            class="text-center 300:text-[50px] 500:text-[70px] 700:text-[80px] 800:text-[70px] 900:text-[90px] 1100:text-[100px]"
+          >
+            LIGHT
+          </h3>
+        </div>
+        <div class="home_text 800:w-[50%] mt-4">
+          <span class="text-firstColor">the best light bulbs</span>
+          <h2
+            class="text-whiteColor 300:text-[25px] 400:text-[30px] 500:text-[35px] 600:text-[40px] 700:text-[45px] 800:text-[30px] 900:text-[40px] 1000:text-[45px] 1100:text-[50px] 1430:text-[65px]"
+          >
+            unique light for you home
+          </h2>
+          <div class="button flex gap-5 mt-5">
+            <button
+              class="bg-firstColor text-whiteColor py-[7px] px-[20px] rounded-[20px]"
+            >
+              Discover Now
+            </button>
+            <button class="flex items-center gap-1">
+              <i class="bx bx-play-circle text-[20px]"></i>
+              <span class=""> watch video</span>
+            </button>
+          </div>
+          <ul class="grid 330:grid-cols-3 grid-cols-2 gap-3 mt-5">
+            <li class="text-center">
+              <h2 class="text-whiteColor text-[40px]">
+                9K<span class="text-firstColor">+</span>
+              </h2>
+              <span class="">premium product</span>
+            </li>
+            <li class="text-center">
+              <h2 class="text-whiteColor text-[40px]">
+                2K<span class="text-firstColor">+</span>
+              </h2>
+              <span class="">happy customer</span>
+            </li>
+            <li class="text-center">
+              <h2 class="text-whiteColor text-[40px]">
+                28K<span class="text-firstColor">+</span>
+              </h2>
+              <span class="">awards winning</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- end home -->
+    <!-- start popular -->
+    <section class="popular" id="popular">
+      <div class="container mt-[100px]">
+        <div class="heading">
+          <h2
+            class="500:text-[50px] 400:text-[40px] 300:text-[30px] text-titleColor font-[700]"
+          >
+            popular product
+          </h2>
+          <p class="">
+            find our best products faster and get the quality <br />
+            lights we have for you.
+          </p>
+        </div>
+        <div
+          class="allPopular grid 1215:grid-cols-4 800:grid-cols-3 511:grid-cols-2 300:grid-cols-1 mt-[100px] gap-10"
+        >
+          <div
+            class="box border-[12px] rounded-t-[200px] border-whiteColor px-[00px] bg-whiteColor"
+          >
+            <div class="img bg-bodyColor rounded-t-[200px] pb-[50px]">
+              <img
+                src="img/features-lamp.png"
+                alt=""
+                class="w-[150px] mx-auto h-[200px]"
+              />
+            </div>
+            <h2 class="text-titleColor text-[20px] font-[600] mt-3">
+              modern light
+            </h2>
+            <span class="">hanging light</span>
+            <div class="ul flex justify-between items-center">
+              <li class="text-[30px] text-titleColor font-[600]">
+                <span class="text-firstColor">$</span>14
+              </li>
+              <li
+                class="text-[30px] bg-firstColor text-whiteColor rounded-[10px] w-[40px] h-[40px] text-center leading-[40px]"
+              >
+                <i class="bx bx-plus"></i>
+              </li>
+            </div>
+          </div>
+          <div
+            class="box border-[12px] rounded-t-[200px] border-whiteColor px-[00px] bg-whiteColor"
+          >
+            <div class="img bg-bodyColor rounded-t-[200px] pb-[50px]">
+              <img
+                src="img/industrial-lamp.png"
+                alt=""
+                class="w-[150px] mx-auto h-[200px]"
+              />
+            </div>
+            <h2 class="text-titleColor text-[20px] font-[600] mt-3">
+              industrial light
+            </h2>
+            <span class="">industrial light</span>
+            <div class="ul flex justify-between items-center">
+              <li class="text-[30px] text-titleColor font-[600]">
+                <span class="text-firstColor">$</span>20
+              </li>
+              <li
+                class="text-[30px] bg-firstColor text-whiteColor rounded-[10px] w-[40px] h-[40px] text-center leading-[40px]"
+              >
+                <i class="bx bx-plus"></i>
+              </li>
+            </div>
+          </div>
+          <div
+            class="box border-[12px] rounded-t-[200px] border-whiteColor px-[00px] bg-whiteColor"
+          >
+            <div class="img bg-bodyColor rounded-t-[200px] pb-[50px]">
+              <img
+                src="img/superbolw-lamp.png"
+                alt=""
+                class="w-[150px] mx-auto h-[200px]"
+              />
+            </div>
+            <h2 class="text-titleColor text-[20px] font-[600] mt-3">
+              superbolw light
+            </h2>
+            <span class="">superbolw light</span>
+            <div class="ul flex justify-between items-center">
+              <li class="text-[30px] text-titleColor font-[600]">
+                <span class="text-firstColor">$</span>18
+              </li>
+              <li
+                class="text-[30px] bg-firstColor text-whiteColor rounded-[10px] w-[40px] h-[40px] text-center leading-[40px]"
+              >
+                <i class="bx bx-plus"></i>
+              </li>
+            </div>
+          </div>
+          <div
+            class="box border-[12px] rounded-t-[200px] border-whiteColor px-[00px] bg-whiteColor"
+          >
+            <div class="img bg-bodyColor rounded-t-[200px] pb-[50px]">
+              <img
+                src="img/ultrawide-lamp.png"
+                alt=""
+                class="w-[150px] mx-auto h-[200px]"
+              />
+            </div>
+            <h2 class="text-titleColor text-[20px] font-[600] mt-3">
+              ultrawide light
+            </h2>
+            <span class="">ultrawide light</span>
+            <div class="ul flex justify-between items-center">
+              <li class="text-[30px] text-titleColor font-[600]">
+                <span class="text-firstColor">$</span>16
+              </li>
+              <li
+                class="text-[30px] bg-firstColor text-whiteColor rounded-[10px] w-[40px] h-[40px] text-center leading-[40px]"
+              >
+                <i class="bx bx-plus"></i>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end popular -->
+    <!-- start choose -->
+    <section class="choose" id="choose">
+      <div
+        class="container flex 900:flex-row flex-col items-center gap-[100px] mt-[2%]"
+      >
+        <div
+          class="home_img z-[-2] relative bg-gradient-to-r from-gradientOne to-gradientTwo rounded-tl-[50%] rounded-tr-[50%] pb-[100px] border-[6px] border-gradientTwo"
+        >
+          <div class="img w-[65%] mx-auto">
+            <img src="./img/choose-lamp.png" alt="" class="z-[2]" />
+          </div>
+          <h3
+            class="text-center 300:text-[50px] 500:text-[70px] 700:text-[80px] 800:text-[70px] 900:text-[90px] 1100:text-[100px] rotate-[-90deg] absolute top-[45%] left-[-30px] 500:left-[-50px] z-[-1]"
+          >
+            LIGHT
+          </h3>
+        </div>
+        <div class="chooseInfo 900:w-[70%] w-[100%]">
+          <h2
+            class="text-titleColor text-[35px] 900:text-[23px] 1100:text-[30px] 1300:text-[40px] 1400:text-[50px] font-[600]"
+          >
+            why choose us
+          </h2>
+          <p class="900:text-[15px] 1100:text-[20px]">
+            our products have one numerous awards and we can guarantee the
+            unlimited quality of our products
+          </p>
+          <ul class="liChoose mt-[25px]">
+            <li class="flex gap-5 mt-[20px]">
+              <div class="plus liChooseIcon">
+                <i class="bx bx-plus duration-[.3s]"></i>
+              </div>
+              <div class="info">
+                <span
+                  class="text-titleColor 900:text-[12px] 1100:text-[16px] 1300:text-[20px] font-[600]"
+                  >frequently new design</span
+                >
+                <p class="mt-[5px] overflow-hidden h-0 duration-[.3s]">
+                  we make new designs every year, fashion design trending and of
+                  the best quality
+                </p>
+              </div>
+            </li>
+            <li class="flex gap-5 mt-[20px]">
+              <div class="plus liChooseIcon">
+                <i class="bx bx-plus duration-[.3s]"></i>
+              </div>
+              <div class="info">
+                <span
+                  class="text-titleColor 900:text-[12px] 1100:text-[16px] 1300:text-[20px] font-[600]"
+                >
+                  Original Production</span
+                >
+                <p class="mt-[5px] overflow-hidden h-0 duration-[.3s]">
+                  We are the industrial chain of quality lighting products and
+                  offer the most advantageous price.
+                </p>
+              </div>
+            </li>
+            <li class="flex gap-5 mt-[20px]">
+              <div class="plus liChooseIcon">
+                <i class="bx bx-plus duration-[.3s]"></i>
+              </div>
+              <div class="info">
+                <span
+                  class="text-titleColor 900:text-[12px] 1100:text-[16px] 1300:text-[20px] font-[600]"
+                  >Production With Large Stock</span
+                >
+                <p class="mt-[5px] overflow-hidden h-0 duration-[.3s]">
+                  You will not be left without the lamp you chose, we have a
+                  large stock possible in all models.
+                </p>
+              </div>
+            </li>
+            <li class="flex gap-5 mt-[20px]">
+              <div class="plus liChooseIcon">
+                <i class="bx bx-plus duration-[.3s]"></i>
+              </div>
+              <div class="info">
+                <span
+                  class="text-titleColor 900:text-[12px] 1100:text-[16px] 1300:text-[20px] font-[600]"
+                  >Professional Quality Control</span
+                >
+                <p class="mt-[5px] overflow-hidden h-0 duration-[.3s]">
+                  Our quality control does everything possible to send you the
+                  best possible product for your home.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- end choose -->
+    <section class="feature" id="feature">
+      <div
+        class="container flex flex-col-reverse 900:flex-row items-center gap-[60px] mt-[50px]"
+      >
+        <div class="featureInfo 900:w-[60%]">
+          <h2
+            class="text-titleColor font-[600] text-[30px] 400:text-[40px] 600:text-[50px] 900:text-[25px] 1000:text-[30px] 1100:text-[35px] 1200:text-[40px] 1300:text-[45px] 1400:text-[58px]"
+          >
+            latest features
+          </h2>
+          <p class="">
+            We always provide the latest and best features for your customer,
+            don't worry, we provide the latest technology for you.
+          </p>
+          <div
+            class="boxFeature grid grid-cols-1 600:grid-cols-2 mx-auto 900:mx-0 gap-x-[30px] gap-y-[20px] items-center mt-4 w-[80%] 600:w-[100%] 1300:w-[80%]"
+          >
+            <div
+              class="box px-[1.5rem] py-[2rem] bg-gradient-to-r from-gradientThree to-gradientFour text-center hover:shadow-headerShadow duration-700 hover:text-firstColor font-[600]"
+            >
+              <h2 class="">
+                Voltage <br />
+                Settings
+              </h2>
+            </div>
+            <div
+              class="box px-[1.5rem] py-[2rem] bg-gradient-to-r from-gradientThree to-gradientFour text-center hover:shadow-headerShadow duration-700 hover:text-firstColor font-[600]"
+            >
+              <h2 class="">
+                Application <br />
+                Control
+              </h2>
+            </div>
+            <div
+              class="box px-[1.5rem] py-[2rem] bg-gradient-to-r from-gradientThree to-gradientFour text-center hover:shadow-headerShadow duration-700 hover:text-firstColor font-[600]"
+            >
+              <h2 class="">
+                Voice <br />
+                Control
+              </h2>
+            </div>
+            <div
+              class="box px-[1.5rem] py-[2rem] bg-gradient-to-r from-gradientThree to-gradientFour text-center hover:shadow-headerShadow duration-700 hover:text-firstColor font-[600]"
+            >
+              <h2 class="">
+                Schedule <br />
+                Settings
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div
+          class="featureImg 900:w-[40%] z-[-2] relative bg-gradient-to-r from-gradientOne to-gradientTwo rounded-tl-[50%] rounded-tr-[50%] pb-[100px] border-[6px] border-gradientTwo"
+        >
+          <div class="img w-[65%] mx-auto">
+            <img src="./img/choose-lamp.png" alt="" class="z-[2]" />
+          </div>
+          <h3
+            class="text-center 300:text-[60px] 500:text-[70px] 700:text-[80px] 800:text-[70px] 1100:text-[90px] rotate-[90deg] absolute top-[45%] right-[-20px] 500:right-[-50px] z-[-1]"
+          >
+            LIGHT
+          </h3>
+        </div>
+      </div>
+    </section>
+    <!-- start products -->
+    <section class="products" id="products">
+      <div class="container">
+        <div class="heading text-center">
+          <h2
+            class="text-[30px] 500:text-[40px] 700:text-[50px] 900:text-[60px] text-titleColor font-[600]"
+          >
+            our product
+          </h2>
+          <p class="">
+            Discover all our unique products that <br />
+            are suitable for your home.
+          </p>
+        </div>
+        <div
+          class="allBox grid 600:grid-cols-2 900:grid-cols-3 1205:grid-cols-4 gap-[20px] mt-11"
+        >
+          <div
+            class="box border-[12px] rounded-t-[200px] border-whiteColor px-[00px] bg-whiteColor hover:shadow-headerShadow duration-300"
+          >
+            <div class="img bg-bodyColor rounded-t-[200px] pb-[50px]">
+              <img
+                src="img/industrial-lamp.png"
+                alt=""
+                class="w-[150px] mx-auto h-[200px]"
+              />
+            </div>
+            <h2 class="text-titleColor text-[20px] font-[600] mt-3">
+              Modern Light
+            </h2>
+            <span class="">Hanging Light</span>
+            <div class="ul flex justify-between items-center">
+              <li class="text-[30px] text-titleColor font-[600]">
+                <span class="text-firstColor">$</span>14
+              </li>
+              <li
+                class="text-[30px] bg-firstColor text-whiteColor rounded-[10px] w-[40px] h-[40px] text-center leading-[40px]"
+              >
+                <i class="bx bx-plus"></i>
+              </li>
+            </div>
+          </div>
+          <div
+            class="box border-[12px] rounded-t-[200px] border-whiteColor px-[00px] bg-whiteColor hover:shadow-headerShadow duration-300"
+          >
+            <div class="img bg-bodyColor rounded-t-[200px] pb-[50px]">
+              <img
+                src="img/industrial-lamp.png"
+                alt=""
+                class="w-[150px] mx-auto h-[200px]"
+              />
+            </div>
+            <h2 class="text-titleColor text-[20px] font-[600] mt-3">
+              industrial light
+            </h2>
+            <span class="">Hanging Light</span>
+            <div class="ul flex justify-between items-center">
+              <li class="text-[30px] text-titleColor font-[600]">
+                <span class="text-firstColor">$</span>20
+              </li>
+              <li
+                class="text-[30px] bg-firstColor text-whiteColor rounded-[10px] w-[40px] h-[40px] text-center leading-[40px]"
+              >
+                <i class="bx bx-plus"></i>
+              </li>
+            </div>
+          </div>
+          <div
+            class="box border-[12px] rounded-t-[200px] border-whiteColor px-[00px] bg-whiteColor hover:shadow-headerShadow duration-300"
+          >
+            <div class="img bg-bodyColor rounded-t-[200px] pb-[50px]">
+              <img
+                src="img/industrial-lamp.png"
+                alt=""
+                class="w-[150px] mx-auto h-[200px]"
+              />
+            </div>
+            <h2 class="text-titleColor text-[20px] font-[600] mt-3">
+              Superbolw Light
+            </h2>
+            <span class="">Hanging Light</span>
+            <div class="ul flex justify-between items-center">
+              <li class="text-[30px] text-titleColor font-[600]">
+                <span class="text-firstColor">$</span>18
+              </li>
+              <li
+                class="text-[30px] bg-firstColor text-whiteColor rounded-[10px] w-[40px] h-[40px] text-center leading-[40px]"
+              >
+                <i class="bx bx-plus"></i>
+              </li>
+            </div>
+          </div>
+          <div
+            class="box border-[12px] rounded-t-[200px] border-whiteColor px-[00px] bg-whiteColor hover:shadow-headerShadow duration-300"
+          >
+            <div class="img bg-bodyColor rounded-t-[200px] pb-[50px]">
+              <img
+                src="img/industrial-lamp.png"
+                alt=""
+                class="w-[150px] mx-auto h-[200px]"
+              />
+            </div>
+            <h2 class="text-titleColor text-[20px] font-[600] mt-3">
+              Ultrawide Light
+            </h2>
+            <span class="">Hanging Light</span>
+            <div class="ul flex justify-between items-center">
+              <li class="text-[30px] text-titleColor font-[600]">
+                <span class="text-firstColor">$</span>16
+              </li>
+              <li
+                class="text-[30px] bg-firstColor text-whiteColor rounded-[10px] w-[40px] h-[40px] text-center leading-[40px]"
+              >
+                <i class="bx bx-plus"></i>
+              </li>
+            </div>
+          </div>
+          <div
+            class="box border-[12px] rounded-t-[200px] border-whiteColor px-[00px] bg-whiteColor hover:shadow-headerShadow duration-300"
+          >
+            <div class="img bg-bodyColor rounded-t-[200px] pb-[50px]">
+              <img
+                src="img/industrial-lamp.png"
+                alt=""
+                class="w-[150px] mx-auto h-[200px]"
+              />
+            </div>
+            <h2 class="text-titleColor text-[20px] font-[600] mt-3">
+              Roundness Light
+            </h2>
+            <span class="">Hanging Light</span>
+            <div class="ul flex justify-between items-center">
+              <li class="text-[30px] text-titleColor font-[600]">
+                <span class="text-firstColor">$</span>17
+              </li>
+              <li
+                class="text-[30px] bg-firstColor text-whiteColor rounded-[10px] w-[40px] h-[40px] text-center leading-[40px]"
+              >
+                <i class="bx bx-plus"></i>
+              </li>
+            </div>
+          </div>
+          <div
+            class="box border-[12px] rounded-t-[200px] border-whiteColor px-[00px] bg-whiteColor hover:shadow-headerShadow duration-300"
+          >
+            <div class="img bg-bodyColor rounded-t-[200px] pb-[50px]">
+              <img
+                src="img/industrial-lamp.png"
+                alt=""
+                class="w-[150px] mx-auto h-[200px]"
+              />
+            </div>
+            <h2 class="text-titleColor text-[20px] font-[600] mt-3">
+              Stickness Light
+            </h2>
+            <span class="">Hanging Light</span>
+            <div class="ul flex justify-between items-center">
+              <li class="text-[30px] text-titleColor font-[600]">
+                <span class="text-firstColor">$</span>28
+              </li>
+              <li
+                class="text-[30px] bg-firstColor text-whiteColor rounded-[10px] w-[40px] h-[40px] text-center leading-[40px]"
+              >
+                <i class="bx bx-plus"></i>
+              </li>
+            </div>
+          </div>
+          <div
+            class="box border-[12px] rounded-t-[200px] border-whiteColor px-[00px] bg-whiteColor hover:shadow-headerShadow duration-300"
+          >
+            <div class="img bg-bodyColor rounded-t-[200px] pb-[50px]">
+              <img
+                src="img/industrial-lamp.png"
+                alt=""
+                class="w-[150px] mx-auto h-[200px]"
+              />
+            </div>
+            <h2 class="text-titleColor text-[20px] font-[600] mt-3">
+              Superjet Light
+            </h2>
+            <span class="">Hanging Light</span>
+            <div class="ul flex justify-between items-center">
+              <li class="text-[30px] text-titleColor font-[600]">
+                <span class="text-firstColor">$</span>15
+              </li>
+              <li
+                class="text-[30px] bg-firstColor text-whiteColor rounded-[10px] w-[40px] h-[40px] text-center leading-[40px]"
+              >
+                <i class="bx bx-plus"></i>
+              </li>
+            </div>
+          </div>
+          <div
+            class="box border-[12px] rounded-t-[200px] border-whiteColor px-[00px] bg-whiteColor hover:shadow-headerShadow duration-300"
+          >
+            <div class="img bg-bodyColor rounded-t-[200px] pb-[50px]">
+              <img
+                src="img/industrial-lamp.png"
+                alt=""
+                class="w-[150px] mx-auto h-[200px]"
+              />
+            </div>
+            <h2 class="text-titleColor text-[20px] font-[600] mt-3">
+              Nakedness Light
+            </h2>
+            <span class="">Hanging Light</span>
+            <div class="ul flex justify-between items-center">
+              <li class="text-[30px] text-titleColor font-[600]">
+                <span class="text-firstColor">$</span>10
+              </li>
+              <li
+                class="text-[30px] bg-firstColor text-whiteColor rounded-[10px] w-[40px] h-[40px] text-center leading-[40px]"
+              >
+                <i class="bx bx-plus"></i>
+              </li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end products -->
+    <div
+      class="banner w-[90%] 900:w-[70%] mx-auto flex flex-col 900:flex-row items-center gap-[20px] 900:gap-[70px] bg-whiteColor px-[20px] 900:px-[50px] 1100:px-[60px] 1300:px-[70px] 1500:px-[80px] mt-[150px] pb-6"
+    >
+      <div
+        class="home_img relative top-[-60px] bg-gradient-to-r from-gradientOne to-gradientTwo rounded-tl-[50%] rounded-tr-[50%] w-[100%] 900:w-[40%] pb-[100px] border-[6px] border-firstColor"
+      >
+        <div class="img w-[80%] mx-auto">
+          <img src="./img/home-lamp.png" alt="" class="" />
+        </div>
+        <h3
+          class="text-center 300:text-[50px] 500:text-[70px] 700:text-[80px] 800:text-[70px] 900:text-[30px] 1100:text-[50px] 1300:text-[70px] 1500:text-[80px]"
+        >
+          LIGHT
+        </h3>
+      </div>
+      <div class="info w-[100%] 900:w-[60%]">
+        <h2
+          class="text-[40px] 400:text-[50px] 500:text-[60px] 600:text-[70px] 700:text-[80px] 900:text-[40px] 1000:text-[45px] 1100:text-[50px] 1200:text-[55px] 1300:text-[60px] 1400:text-[70px] font-[500] text-titleColor"
+        >
+          get started
+        </h2>
+        <p class="my-[10px]">
+          do not miss it ,join us and get <br />
+          interesting discounts with us.
+        </p>
+        <form action="" class="relative flex flex-col 900:flex-row">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="bg-bodyColor py-[15px] rounded-[50px] pr-[50px] 500:pr-[60px] 600:pr-[70px] 700:pr-[80px] 800:pr-[90px] 900:pr-[70px] pl-[10px]"
+          />
+          <button
+            type="submit"
+            class="absolute bg-firstColor text-whiteColor px-[20px] py-[15px] rounded-[50px] 900:right-[00px] 1000:right-[20px] 1100:right-[30px] 1200:right-[40px] 1300:right-[50px] 1400:right-[70px]"
+          >
+            Join Now
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="contact mt-[50px]">
+      <div class="container flex flex-col 900:flex-row">
+        <div class="logo 900:w-[30%] 1100:w-[40%]">
+          <a href="" class="logoName text-[20px]"
+            >SUN<span class="text-firstColor">LIGHT</span></a
+          >
+          <p class="mt-[10px]">
+            We have a vision to make <br />
+            lighting evenly distributed to all <br />
+            parts of the earth.
+          </p>
+        </div>
+        <div
+          class="900:w-[70%] 1100:w-[60%] grid grid-cols-1 500:grid-cols-2 700:grid-cols-3 900:grid-cols-4 items-start gap-3 mt-[20px]"
+        >
+          <div class="box">
+            <h2 class="head font-[500] text-titleColor text-[20px]">about</h2>
+            <ul class="mt-[10px]">
+              <li class="hover:text-firstColor duration-300">about us</li>
+              <li class="hover:text-firstColor duration-300">feature</li>
+              <li class="hover:text-firstColor duration-300">news& blog</li>
+            </ul>
+          </div>
+          <div class="box">
+            <h2 class="head font-[500] text-titleColor text-[20px]">
+              movement
+            </h2>
+            <ul class="mt-[10px]">
+              <li class="hover:text-firstColor duration-300">what sunlight</li>
+              <li class="hover:text-firstColor duration-300">support us</li>
+            </ul>
+          </div>
+          <div class="box">
+            <h2 class="head font-[500] text-titleColor text-[20px]">company</h2>
+            <ul class="mt-[10px]">
+              <li class="hover:text-firstColor duration-300">why sunlight</li>
+              <li class="hover:text-firstColor duration-300">capital</li>
+              <li class="hover:text-firstColor duration-300">security</li>
+            </ul>
+          </div>
+          <div class="box">
+            <h2 class="head font-[500] text-titleColor text-[20px]">follow</h2>
+            <ul class="mt-[10px] flex gap-3">
+              <li class="hover:text-firstColor duration-300">
+                <i class="bx bxl-facebook"></i>
+              </li>
+              <li class="hover:text-firstColor duration-300">
+                <i class="bx bxl-instagram"></i>
+              </li>
+              <li class="hover:text-firstColor duration-300">
+                <i class="bx bxl-twitter"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2
+      class="end mx-auto text-center my-[30px] text-[17px] 400:text-[22px] 600:text-[30px]"
+    >
+      created ~> <span class="text-firstColor"> mohamed ayman</span>
+    </h2>
+    <script src="js/main.js"></script>
+  </body>
+</html>
